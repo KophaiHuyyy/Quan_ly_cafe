@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="capheDataSet5" targetNamespace="http://tempuri.org/capheDataSet5.xsd" xmlns:mstns="http://tempuri.org/capheDataSet5.xsd" xmlns="http://tempuri.org/capheDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="capheConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="capheConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Quan_caphe.Properties.Settings.GlobalReference.Default.capheConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewHoaDonTableAdapter" GeneratorDataComponentClassName="ViewHoaDonTableAdapter" Name="ViewHoaDon" UserDataComponentName="ViewHoaDonTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="capheConnectionString (Settings)" DbObjectName="caphe.dbo.ViewHoaDon" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ma_hoadon, ten_khachhang, ma_khachhang, ma_sp, tensp, gia_sp, so_luong, tongtien_hoadon FROM dbo.ViewHoaDon</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ma_hoadon" DataSetColumn="ma_hoadon" />
+              <Mapping SourceColumn="ten_khachhang" DataSetColumn="ten_khachhang" />
+              <Mapping SourceColumn="ma_khachhang" DataSetColumn="ma_khachhang" />
+              <Mapping SourceColumn="ma_sp" DataSetColumn="ma_sp" />
+              <Mapping SourceColumn="tensp" DataSetColumn="tensp" />
+              <Mapping SourceColumn="gia_sp" DataSetColumn="gia_sp" />
+              <Mapping SourceColumn="so_luong" DataSetColumn="so_luong" />
+              <Mapping SourceColumn="tongtien_hoadon" DataSetColumn="tongtien_hoadon" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="capheDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="capheDataSet5" msprop:Generator_DataSetName="capheDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewHoaDon" msprop:Generator_RowEvHandlerName="ViewHoaDonRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewHoaDonRowDeleted" msprop:Generator_RowDeletingName="ViewHoaDonRowDeleting" msprop:Generator_RowEvArgName="ViewHoaDonRowChangeEvent" msprop:Generator_TablePropName="ViewHoaDon" msprop:Generator_RowChangedName="ViewHoaDonRowChanged" msprop:Generator_RowChangingName="ViewHoaDonRowChanging" msprop:Generator_TableClassName="ViewHoaDonDataTable" msprop:Generator_RowClassName="ViewHoaDonRow" msprop:Generator_TableVarName="tableViewHoaDon" msprop:Generator_UserTableName="ViewHoaDon">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_hoadon" msprop:Generator_ColumnPropNameInRow="ma_hoadon" msprop:Generator_ColumnPropNameInTable="ma_hoadonColumn" msprop:Generator_ColumnVarNameInTable="columnma_hoadon" msprop:Generator_UserColumnName="ma_hoadon" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ten_khachhang" msprop:Generator_ColumnPropNameInRow="ten_khachhang" msprop:Generator_ColumnPropNameInTable="ten_khachhangColumn" msprop:Generator_ColumnVarNameInTable="columnten_khachhang" msprop:Generator_UserColumnName="ten_khachhang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ma_khachhang" msprop:Generator_ColumnPropNameInRow="ma_khachhang" msprop:Generator_ColumnPropNameInTable="ma_khachhangColumn" msprop:Generator_ColumnVarNameInTable="columnma_khachhang" msprop:Generator_UserColumnName="ma_khachhang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ma_sp" msprop:Generator_ColumnPropNameInRow="ma_sp" msprop:Generator_ColumnPropNameInTable="ma_spColumn" msprop:Generator_ColumnVarNameInTable="columnma_sp" msprop:Generator_UserColumnName="ma_sp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tensp" msprop:Generator_ColumnPropNameInRow="tensp" msprop:Generator_ColumnPropNameInTable="tenspColumn" msprop:Generator_ColumnVarNameInTable="columntensp" msprop:Generator_UserColumnName="tensp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gia_sp" msprop:Generator_ColumnPropNameInRow="gia_sp" msprop:Generator_ColumnPropNameInTable="gia_spColumn" msprop:Generator_ColumnVarNameInTable="columngia_sp" msprop:Generator_UserColumnName="gia_sp" type="xs:decimal" minOccurs="0" />
+              <xs:element name="so_luong" msprop:Generator_ColumnPropNameInRow="so_luong" msprop:Generator_ColumnPropNameInTable="so_luongColumn" msprop:Generator_ColumnVarNameInTable="columnso_luong" msprop:Generator_UserColumnName="so_luong" type="xs:int" minOccurs="0" />
+              <xs:element name="tongtien_hoadon" msprop:Generator_ColumnPropNameInRow="tongtien_hoadon" msprop:Generator_ColumnPropNameInTable="tongtien_hoadonColumn" msprop:Generator_ColumnVarNameInTable="columntongtien_hoadon" msprop:Generator_UserColumnName="tongtien_hoadon" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
